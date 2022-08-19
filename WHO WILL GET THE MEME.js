@@ -30,11 +30,9 @@ function respond(){
 */
 function clearAll() {
  var memeContainer = document.querySelector('.meme-content');
-  var songContainer = document.querySelector('.song-content');
+  var songContainer = document.querySelector('.song-container');
  memeContainer.innerHTML = '' ;
   songContainer.innerHTML = '' ;
- }
-
  container.appendChild (newImg);
 }
 
@@ -59,8 +57,8 @@ container.appendChild (newImg);
 * - Never play more than 1 song at a time
 */
 function playSong() {
-  // Value is a string representing the joke
-  const randomJokeText = getRandomData('jokes');
+  
+  var randomJokeText = getRandomData('song');
 }
 
 
@@ -68,15 +66,7 @@ function getRandomData(type) {
   return data[type][rn(data[type].length)];
 }
 
-// ----------------------------------------------------
-// NO NEED TO CHANGE ANYTHING BELOW but...
-// feel free to add/remove items from these lists to customize
-// your results
-// ----------------------------------------------------
-
-// Source: https://www.thecoderpedia.com/blog/programming-memes/, Reddit
-const memes = ['https://i.redd.it/a0v87gwzoge61.jpg', 'https://i.redd.it/q29egav34ee61.jpg', 'https://www.happierhuman.com/wp-content/uploads/2022/02/memes-being-ignored-factorymeme-someone-pay-attention.jpg', 'https://i.redd.it/vek7dm2hrge61.jpg', 'https://www.testbytes.net/wp-content/uploads/2019/06/Untitled-8.png', 'https://miro.medium.com/max/1000/0*Ua695vjzFHV6VNOX.png', 'https://pbs.twimg.com/media/EKkPagPXkAA__Qo.jpg', 'https://code-love.com/wp-content/uploads/2019/03/download.jpeg', 'https://www.thecoderpedia.com/wp-content/uploads/2020/06/Programming-Memes-Programmer-while-sleeping.jpg', 'https://www.thecoderpedia.com/wp-content/uploads/2020/06/Programming-Memes-Evolution-of-Memory-Storage-1024x996.jpg', 'https://www.thecoderpedia.com/wp-content/uploads/2020/06/Programming-Memes-Error-in-Code-896x1024.jpg', 'https://www.thecoderpedia.com/wp-content/uploads/2020/06/Coding-Meme-Code-Comments-be-Like-925x1024.jpg', 'https://www.thecoderpedia.com/wp-content/uploads/2020/06/Internet-Explorer-Joke-915x1024.jpg'];
-
+var memes = ['https://cdn.ebaumsworld.com/2019/06/21/073530/85996630/DepressionMemes2.jpg', 'https://lotswife.com.au/wp-content/uploads/2018/06/Sad-Homie-Memes-Sad-Depressing-Meme-2.jpg', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKAeJp42-rZEHlx7424X2dy_iue-UOHP-LQ5sLifUp&s', 'https://tailpic.com/wp-content/uploads/2021/05/45-Sad-Memes-When-Youre-Feeling-Sad-Like-Drowning-1.jpg', 'https://mamasuncut.com/wp-content/uploads/2022/03/sad-meme-3.jpeg','https://i.chzbgr.com/full/9187993088/h4EDCD403/toy-upset-at-someone-but-repress-emotions-protect-their-comfort-even-though-know-s-incredibly-toxic'] ;
 
 // Just a little helper function
 function rn(len) {

@@ -86,12 +86,7 @@ body{
   height: 4px;
   width: 100%;
 } 
-.progress{
-  background-color: #fe8daa;
-  border-radius: 5px;
-  height: 100%;
-  width: 50%;
-}
+
 body {
   background-color: #1D2326;
   color: #BFA38A;
